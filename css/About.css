@@ -1,0 +1,184 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1594035910387-fea47794261f') center/cover no-repeat;
+      height: 60vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .icon-box {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .icon-box i {
+      font-size: 30px;
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      background: black;
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+     .footer {
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+      margin-left: px;
+      text-decoration: none;
+       color:#aaaaaa;
+      background:#212529;
+}
+
+.my-icon{
+  font-size: 30px;
+  /* text-align: center; */
+  /* margin-left:50px ; */
+  background: green;
+  padding: 12px;
+  border-radius: 50%;
+  margin: auto;
+  color: wheat;
+}
+
+.custom-input{
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 10px 15px;
+  outline: none;
+  margin-right: 20px;
+  background: white;
+  color: black;
+  font-weight: 700;
+   opacity: 1; 
+  font-style: italic;
+  margin-left: 80px; 
+  
+
+}
+/* .video-box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+} 
+
+.team-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 50px;
+  
+} 
+
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+} */
+/* .video-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+      */
+
+      .video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-position: 00;
+}
+
+.video-wrapper video {
+  width: 100%;
+  max-width: 600px;  
+  height: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+  
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+} 
+.footer a{
+    color:white;
+    text-decoration:none;
+}
+
+.socials i{
+    margin:0 10px;
+    font-size:24px;
+}
+
+.whatsapp-box{
+    background:white;
+    color:black;
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:12px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.whatsapp-box i{
+    color:green;
+    font-size:22px;
+}
+/* .video-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+} */

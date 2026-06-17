@@ -1,0 +1,704 @@
+ <!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfume Product Page</title>
+    <!-- Bootstrap CSS -->  
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+      <!-- Bootstrap Icons --> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/product.css">
+        <!-- font icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    </head>
+<body>
+
+
+
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+<div class="container">
+
+
+<a class="navbar-brand logo "  style="color: gold; font-size: 0px; " ><img src="images/two.jpeg" alt="" style="width: 50px; border-radius: 5px;  "></a>
+<!-- <a class="navbar-brand fw-bold pt-3 mx-3" href="#">IMMAS PERFUMES AND MORE</a> -->
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="About.html">About</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Shop
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="shop3.html">deodorant/body spary/body mist</a></li>
+<li><a class="dropdown-item" href="shop2.html">diffusers</a></li>
+<li><a class="dropdown-item" href="shop.html">perfumes</a></li>
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Brands
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="Product2.html">LATTAFA</a></li>
+<li><a class="dropdown-item" href="product1.html">AFNAN</a></li>
+<li><a class="dropdown-item" href="product.html">ARMAF</a></li>
+</ul>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="Contact.html">Contact</a>
+</li>
+
+
+<li class="nav-item">
+  <a class="nav-link position-relative" href="Cart.html">
+  <i class="bi bi-cart fs-5"></i>
+
+  <span class="cart-count-navbar badge bg-danger">0</span>
+</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- HERO VIDEO -->
+
+
+<section class="hero d-flex align-items-center justify-content-center text-center">
+
+<video autoplay muted loop >
+<source src="videos/PODL VID1.mp4" type="video/mp4">
+</video>
+
+<div class="hero-overlay"></div>
+<div class="hero-content">
+ <h1 class="display-3 fw-bold" style="color: white;"><i>ARMAF</i></h1>
+ <p class="lead" style="color: white;"><b>WEAR CONFIDENCE IN EVERY SPRAY</b></p>  
+<!-- <a href="#" class="btn btn-outline-light px-4">Shop Now</a> -->
+</div>
+
+
+</section>
+
+
+<!-- PRODUCT SECTION -->
+ <section class="section " >
+  <div class="container">
+    <div class="row align-items-center"><!-- Image -->
+  <div class="col-md-6">
+    <img src="images/four.jpg" class="product-img">
+  </div>
+
+  <!-- Details -->
+  <div class="col-md-6">
+    <h2 class="gold"> Clue D Nuite (limited edition)</h2>
+    <h3 class="gold">₦120,000</h3>
+    <p>Bold, long-lasting fragrance for confident individuals.<br>And also one of the best of ARMAF <br>So buy now an thank us later  <br><br> <button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p35','Club De Nuit (limited edition)',120000)">
+Add to Cart
+</button> </p>
+     
+   
+    <!-- <button class="btn btn-outline-light">Buy Now</button> -->
+  </div>
+
+</div>
+
+  </div>
+</section>
+<!-- FRAGRANCE NOTES -->
+ <section class="section1 bg-dark " style="color: white;">
+  <div class="container text-center">
+    <h3 class="gold mb-4">Fragrance Notes</h3><div class="row">
+  <div class="col-md-4">
+    <h5>Top Notes</h5>
+    <p>Lemon, Bergamot</p>
+  </div>
+  <div class="col-md-4">
+    <h5>Middle Notes</h5>
+    <p>Rose, Jasmine</p>
+  </div>
+  <div class="col-md-4">
+    <h5>Base Notes</h5>
+    <p>Musk, Amber</p>
+  </div>
+</div>
+
+  </div>
+</section>
+<!-- DESCRIPTION
+ <section class="section">
+  <div class="container">
+    <h3 class="gold">Description</h3>
+    <p>
+      Crafted for elegance, this fragrance blends citrus freshness with deep woody warmth.
+      Perfect for both day and night wear.
+    </p>
+  </div>
+</section>
+
+ <section class="section bg-dark">
+  <div class="container">
+    <h3 class="gold">Product Details</h3>
+    <ul>
+      <li>Size: 100ml</li>
+      <li>Type: Eau de Parfum</li>
+      <li>Longevity: 8-12 hours</li>
+      <li>Gender: Unisex</li>
+    </ul>
+  </div>
+</section> -->
+<!-- RELATED PRODUCTS -->
+ 
+
+<!-- PRODUCTS -->
+<section class="container py-5 mt-5">
+
+<h2 class="text-center mb-5">Our Armaf Collection</h2>
+
+<div class="row g-4">
+
+<!-- PRODUCT 1 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 01.jpg">
+<div class="card-body text-center">
+<h6>club de nuite woman</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p11','Club De Nuit WOMAN',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 02.jpg">
+<div class="card-body text-center">
+<h6>clube d nuite precieux IV</h6>
+<p>&#8358;90,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p12','Club De Nuit precieux IV',90000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 03.jpg">
+<div class="card-body text-center">
+<h6>club de nuite precieux I</h6>
+<p>&#8358;90,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p13','Club De Nuit precieux I',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 04.jpg">
+<div class="card-body text-center">
+<h6>club d nuit lion heart MAN</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p14','Club De Nuit lion heart',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 05.jpg">
+<div class="card-body text-center">
+<h6>CONNOISSEUR MAN</h6>
+<p>&#8358;90,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p15','CONNOISSEUR MAN',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 06.jpg">
+<div class="card-body text-center">
+<h6>club de nuite ICONIC</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p16','club de nuit iconic',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 07.jpg">
+<div class="card-body text-center">
+<h6>clube d nuit BLING</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p17','Club De Nuit BLING',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 08.jpg">
+<div class="card-body text-center">
+<h6>club d nuite INTENSE MAN</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p18','Club De Nuit INTENSE MAN',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 09.jpg">
+<div class="card-body text-center">
+<h6>clube d nuit URBAN </h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p19','Club De Nuit URBAN',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 010.jpg">
+<div class="card-body text-center">
+<h6>club de nuit URBAN MAN</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p20','Club De Nuit URBAN MAN',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 011.jpg">
+<div class="card-body text-center">
+<h6>club d nuite <br>MAN</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p21','Club De Nuit MAN',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 012.jpg">
+<div class="card-body text-center">
+<h6>club d nuite IMPERIAL</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p22','Club De Nuit IMPERIAL',60000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 013.jpg">
+<div class="card-body text-center">
+<h6>club d nuit SILLAGE</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p23','Club De Nuit SILLAGE',60000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 014.jpg">
+<div class="card-body text-center">
+<h6>club de nuit MILESTONE</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p24','Club De Nuit MILESTONE',60000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 015.jpg">
+<div class="card-body text-center">
+<h6>clube d nuite UNTOLD</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p25','Club De Nuit UNTOLD',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 018.jpg">
+<div class="card-body text-center">
+<h6>miss armaf DAZZLLING</h6>
+<p>&#8358;55,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p26','MISS ARMAF DAZLLING',55000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 019.jpg">
+<div class="card-body text-center">
+<h6>miss armaf MYSTIQUE</h6>
+<p>&#8358;55,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p27','MISS ARMAF MYSTIQUE',55000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 020.jpg">
+<div class="card-body text-center">
+<h6>miss armaf CATWALK</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p28','MISS ARMAF CATWALK',60000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 021.jpg">
+<div class="card-body text-center">
+<h6>miss armaf MAGNIFIQ</h6>
+<p>&#8358;55,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p29','MISS ARMAF MAGNIFIQ',55000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 022.jpg">
+<div class="card-body text-center">
+<h6>club d nuit OUD</h6>
+<p>&#8358;105,000 <del>&#8358;140,000</del></p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p30','Club De Nuit OUD',105000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 025.jpg">
+<div class="card-body text-center">
+<h6>EL CIELO</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p31','EL CIELO',60000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 026.jpg">
+<div class="card-body text-center">
+<h6>X christian provenzano</h6>
+<p>&#8358;110,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p32','X christian provenzano',110000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 032.jpg">
+<div class="card-body text-center">
+<h6>ARMAF YUMYUM</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p33','ARMAF YUMYUM',60000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 031.jpg">
+<div class="card-body text-center">
+<h6>D HUNTER</h6>
+<p>&#8358;40,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p34','D HUNTER',40000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="PODL 26.jpg">
+<div class="card-body text-center">
+<h6>Perfume Two</h6>
+<p>$60</p>
+<button class="btn btn-outline-danger btn-sm text-red">Add to Cart</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="PODL 24.jpg">
+<div class="card-body text-center">
+<h6>Perfume Two</h6>
+<p>$60</p>
+<button class="btn btn-outline-danger btn-sm text-red">Add to Cart</button>
+</div>
+</div>
+</div>
+
+
+
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="PODL 25.jpg">
+<div class="card-body text-center">
+<h6>Perfume Two</h6>
+<p>$60</p>
+<button class="btn btn-outline-danger btn-sm text-red">Add to Cart</button>
+</div>
+</div>
+</div>
+
+
+
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="PODL 27.jpg">
+<div class="card-body text-center">
+<h6>Perfume Two</h6>
+<p>$60</p>
+<button class="btn btn-outline-danger btn-sm text-red">Add to Cart</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="PODL 28.jpg">
+<div class="card-body text-center">
+<h6>Perfume Two</h6>
+<p>$60</p>
+<button class="btn btn-outline-danger btn-sm text-red">Add to Cart</button>
+</div>
+</div>
+</div>
+
+
+
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="PODL 29.jpg">
+<div class="card-body text-center">
+<h6>Perfume Two</h6>
+<p>$60</p>
+<button class="btn btn-outline-danger btn-sm text-red">Add to Cart</button>
+</div>
+</div>
+</div>
+
+
+
+ -->
+
+
+<a href="product2.html"><button class="btn btn-light rounded-pill px-4">Explore LATTAFA Products</button></a>
+
+<a href="Product1.html"> <button class="btn btn-light rounded-pill px-4"> Explore AFNAN Products </button></a>
+
+
+</div>
+</section>
+
+
+<div class="floating-cart position-fixed bottom-0 end-0 m-3 bg-black text-white p-3 rounded-circle shadow">
+  <a href="Cart.html" class="text-white text-decoration-none">
+    <i class="bi bi-cart fs-4"></i>
+    <span id="cart-count" class="badge bg-danger">0</span>
+  </a>
+</div>
+
+
+<!-- 🔹 FOOTER -->
+
+
+<footer class="footer text-white">
+
+<div class="socials mb-3">
+
+<a href="https://www.facebook.com/immaculate b">
+<i class="bi bi-facebook"></i>
+</a>
+
+<a href="https://www.instagram.com/immaperfumes">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@immas.perfumes.and">
+<i class="fab fa-tiktok"></i>
+</a>
+
+</div>
+
+<p>
+© 2026 Imma's Perfumes
+</p>
+
+<p>
+Powered by Imma's Perfumes and More
+</p>
+
+<div class="whatsapp-box">
+
+Chat With Us
+
+<a href="https://wa.me/2347036392420">
+
+<i class="fab fa-whatsapp ms-2"></i>
+
+</a>
+
+</div>
+
+</footer>
+
+
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <script src="js/cart.js"></script>
+</body>
+
+</html
+
+
+
+

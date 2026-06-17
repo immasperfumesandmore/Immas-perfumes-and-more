@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immas Perfume - Contact</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="css/Contact.css">
+
+<body>
+
+<!-- 🔷 NAVBAR -->
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+   
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+        <li class="nav-item"><a class="nav-link active text-warning" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+<div class="container">
+
+
+ <!-- <a class="navbar-brand fw-bold text-warning" href="#">Immas Perfume</a> -->
+<!-- <a class="navbar-brand fw-bold pt-3 mx-3" href="#">IMMAS PERFUMES AND MORE</a> -->
+<a class="navbar-brand logo "  style="color: gold; font-size: 0px; " ><img src="images/two.jpeg" alt="" style="width: 50px; border-radius: 5px;  "></a>
+<!-- <a class="navbar-brand fw-bold pt-3 mx-3" href="#">IMMAS PERFUMES AND MORE</a> -->
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="About.html">About</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Shop
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="shop3.html">deodorant/body spary/body mist</a></li>
+<li><a class="dropdown-item" href="shop2.html">diffusers</a></li>
+<li><a class="dropdown-item" href="shop.html">perfumes</a></li>
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Brands
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="Product2.html">LATTAFA</a></li>
+<li><a class="dropdown-item" href="product1.html">AFNAN</a></li>
+<li><a class="dropdown-item" href="product.html">ARMAF</a></li>
+</ul>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="Contact.html">Contact</a>
+</li>
+
+
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- 🔷 HERO SECTION -->
+<section class="bg- text-white text-center p-4">
+  <div class="container">
+
+    <div class="row g-4">
+
+      <!-- CONTACT FORM -->
+      <div class="col-md-6">
+
+        <h2 class="mb-4">Send a Message</h2>
+
+        <form onsubmit="sendToWhatsApp(); return false;">
+
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="name"
+              placeholder="Enter your name"
+              required
+            >
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input 
+              type="email" 
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+            >
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+
+            <textarea 
+              class="form-control"
+              rows="5"
+              id="message"
+              placeholder="Type your message..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-dark w-100">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class=" info col-md-6 info p-5" >
+
+        <h2 class="mb-4">Get in Touch</h2>
+
+        <p><strong>📍 Address:</strong> Asaba, Nigeria</p>
+
+        <p><strong>📞 Phone:</strong> +234 703 639 2420</p>
+
+        <p><strong>📧 Email:</strong> info@immasperfume.com</p>
+
+        <h4 class="mt-4">Business Hours</h4>
+
+        <p>Mon - Sat: 9AM - 8PM</p>
+
+        <p>Sunday: Closed</p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<div class="map-container">
+  <iframe
+    src="https://www.google.com/maps?q=deltaasabatraditionalrulers,Nigeria&output=embed"
+    width="100%"
+    height="300"
+    style="border:0; border-radius:10px;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
+<!-- 🔹 FOOTER -->
+
+
+<footer class="footer text-white">
+
+<div class="socials mb-3">
+
+<a href="https://www.facebook.com/immaculate b">
+<i class="bi bi-facebook"></i>
+</a>
+
+<a href="https://www.instagram.com/immaperfumes">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@immas.perfumes.and">
+<i class="fab fa-tiktok"></i>
+</a>
+
+</div>
+
+<p>
+© 2026 Imma's Perfumes
+</p>
+
+<p>
+Powered by Imma's Perfumes and More
+</p>
+
+<div class="whatsapp-box">
+
+Chat With Us
+
+<a href="https://wa.me/2347036392420">
+
+<i class="fab fa-whatsapp ms-2"></i>
+
+</a>
+
+</div>
+
+</footer>
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

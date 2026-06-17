@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lattafa Perfumes</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/product2.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+<div class="container">
+
+
+<a class="navbar-brand logo "  style="color: gold; font-size: 0px; " ><img src="images/two.jpeg" alt="" style="width: 40px; border-radius: 5px;  "></a>
+<!-- <a class="navbar-brand fw-bold pt-3 mx-3" href="#">IMMAS PERFUMES AND MORE</a> -->
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="About.html">About</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Shop
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="shop3.html">deodorant/body spary/body mist</a></li>
+<li><a class="dropdown-item" href="shop2.html">diffusers</a></li>
+<li><a class="dropdown-item" href="shop.html">perfumes</a></li>
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Brands
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="Product2.html">LATTAFA</a></li>
+<li><a class="dropdown-item" href="product1.html">AFNAN</a></li>
+<li><a class="dropdown-item" href="product.html">ARMAF</a></li>
+</ul>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="Contact.html">Contact</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link position-relative" href="Cart.html">
+  <i class="bi bi-cart fs-5"></i>
+
+  <span class="cart-count-navbar badge bg-danger">0</span>
+</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- HERO VIDEO -->
+
+
+<section class="hero d-flex align-items-center justify-content-center text-center">
+
+<video autoplay muted loop >
+<source src="videos/PODL VID3.mp4" type="video/mp4">
+</video>
+
+<div class="hero-overlay"></div>
+<div class="hero-content">
+ <h1 class="display-3 fw-bold" style="color: white;"><i>LATTAFA</i></h1>
+ <p class="lead" style="color: white;"><b>LUXURY IN  EVERYDROP</b></p>  
+<!-- <a href="#" class="btn btn-outline-light px-4">Shop Now</a> -->
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- PRODUCTS -->
+<section class="container py-5 mt-5">
+
+<h2 class="text-center mb-5">Our Lattafa Collection</h2>
+
+<div class="row g-4">
+
+<!-- PRODUCT 1 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 1.jpg">
+<div class="card-body text-center">
+<h6>WAJOOD</h6>
+<p>&#8358;45,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p66','WAJOOD',45000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 2.jpg">
+<div class="card-body text-center">
+<h6>KASHAN</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p67','KASHAN',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 03.jpg">
+<div class="card-body text-center">
+<h6>BADEE AL <BR> OUD</h6>
+<p>&#8358;20,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p68','BADEE AL OUD',20000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 3.jpg">
+<div class="card-body text-center">
+<h6>COLLECTION D ANTIQUITE'S</h6>
+<p>&#8358;20,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p69','COLLECTION D ANTIQUITE',20000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 4.jpg">
+<div class="card-body text-center">
+<h6>BREZZ</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p70','BREZZ',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 5.jpg">
+<div class="card-body text-center">
+<h6>SHAHEEN GOLD</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p71','SHAHEEN GOLD',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 6.jpg">
+<div class="card-body text-center">
+<h6>SHAHEEN <BR> <BR>SILVER</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p72','SHAHEEN SILVER',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 7.jpg">
+<div class="card-body text-center">
+<h6>COLLECTION D ANTIQUITE'S 1886</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p73','COLLECTION DE ANTIQUITE 1886',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 8.jpg">
+<div class="card-body text-center">
+<h6>NEBRAS</h6>
+<p>&#8358;45,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p74','NEBRAS',45000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 9.jpg">
+<div class="card-body text-center">
+<h6>ASAAM</h6>
+<p>&#8358;45,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p75','ASAAM',45000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 10.jpg">
+<div class="card-body text-center">
+<h6>AL <BR> AMEED</h6>
+<p>&#8358;45,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p76','AL AMEED',45000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 11.jpg">
+<div class="card-body text-center">
+<h6>ISHQ AL SHUYUKH</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p77','ISHQ AL SHUYUKH',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 12.jpg">
+<div class="card-body text-center">
+<h6>PEACE & LOVE</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p','PEACE & LOVE',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 13.jpg">
+<div class="card-body text-center">
+<h6>AL AREEQ SILVER</h6>
+<p>&#8358;45,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p78','AL AREEQ SILVER',45000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 14.jpg">
+<div class="card-body text-center">
+<h6>ISHQ AL SHUYUKH SILVER</h6>
+<p>&#8358;45,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p79','AL SHUYUKH SILVER',45000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 15.jpg">
+<div class="card-body text-center">
+<h6>ANSAAM <BR> SILVER</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p80','ANSAAM SILVER',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 16.jpg">
+<div class="card-body text-center">
+<h6>LA AFRICAN DRUMMER</h6>
+<p>&#8358;45,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p81','LA AFRICAN DRUMMER',45000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 17.jpg">
+<div class="card-body text-center">
+<h6>ART OF ARABIA <BR> I</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p82','ART OF AREBIA',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 18.jpg">
+<div class="card-body text-center">
+<h6>ART OF NATURE II</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p83','ART OF NATURE',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 19.jpg">
+<div class="card-body text-center">
+<h6>ART OF NATURE <BR>I</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p84','ART OF NATION',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 20.jpg">
+<div class="card-body text-center">
+<h6>ETERNAL VANILLE</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p85','ETERNAL VANILLE',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 21.jpg">
+<div class="card-body text-center">
+<h6>NEBRAS <BR> ELIXIR</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p86','NEBRAS',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 22.jpg">
+<div class="card-body text-center">
+<h6>ART OF AREBIA <BR>III</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p87','ART OF AREBIA III',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 23.jpg">
+<div class="card-body text-center">
+<h6>ART OF UNIVERSE</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p88','ART OF UNIVERSE',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 26.jpg">
+<div class="card-body text-center">
+<h6>ARABIC COLLECTION</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p89','FATIMA',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 24.jpg">
+<div class="card-body text-center">
+<h6>ROYAL <BR>SAPPHIRE</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p90','ROYAL SAPHAIR',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 25.jpg">
+<div class="card-body text-center">
+<h6>ANSAAM SILVER</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p91','ASAAM SILVER',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 27.jpg">
+<div class="card-body text-center">
+<h6>THARWAH GOLD</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p92','THARWAH GOLD',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 28.jpg">
+<div class="card-body text-center">
+<h6>THARWAH SILVER</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p93','THARWAH SILVER',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PODL 29.jpg">
+<div class="card-body text-center">
+<h6>AL QIAM <BR>GOLD</h6>
+<p>&#8358;55,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p94','AL QIAM',55000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+
+
+
+
+<a href="product1.html"><button class="btn btn-light rounded-pill px-4">Explore AFNAN Products</button></a>
+
+<a href="Product.html"> <button class="btn btn-light rounded-pill px-4"> Explore ARMAF Products </button></a>
+</div>
+
+
+ 
+</section>
+<div class="floating-cart position-fixed bottom-0 end-0 m-3 bg-black text-white p-3 rounded-circle shadow">
+  <a href="Cart.html" class="text-white text-decoration-none">
+    <i class="bi bi-cart fs-4"></i>
+    <span id="cart-count" class="badge bg-danger">0</span>
+  </a>
+</div>
+
+<!-- 🔹 FOOTER -->
+
+
+<footer class="footer text-white">
+
+<div class="socials mb-3">
+
+<a href="https://www.facebook.com/immaculate b">
+<i class="bi bi-facebook"></i>
+</a>
+
+<a href="https://www.instagram.com/immaperfumes">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@immas.perfumes.and">
+<i class="fab fa-tiktok"></i>
+</a>
+
+</div>
+
+<p>
+© 2026 Imma's Perfumes
+</p>
+
+<p>
+Powered by Imma's Perfumes and More
+</p>
+
+<div class="whatsapp-box">
+
+Chat With Us
+
+<a href="https://wa.me/2347036392420">
+
+<i class="fab fa-whatsapp ms-2"></i>
+
+</a>
+
+</div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

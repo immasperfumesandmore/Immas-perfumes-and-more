@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Cart</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+    background:#f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    padding:10px 0;
+}
+
+/* CART CONTAINER */
+.cart-container{
+    margin-top:100px;
+    margin-bottom:50px;
+}
+
+/* CART CARD */
+.cart-card{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* BUTTONS */
+.qty-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.remove-btn{
+    border-radius:10px;
+}
+
+/* CHECKOUT */
+.checkout-box{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.form-control{
+    border-radius:12px;
+    padding:12px;
+}
+
+.checkout-btn{
+    border-radius:12px;
+    padding:12px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+.footer{
+    background:#111827;
+    padding:30px 20px;
+    text-align:center;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+}
+
+.socials i{
+    margin:0 10px;
+    font-size:24px;
+}
+
+.whatsapp-box{
+    background:white;
+    color:black;
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:12px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.whatsapp-box i{
+    color:green;
+    font-size:22px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .cart-card{
+        padding:15px;
+    }
+
+    .qty-btn{
+        width:40px;
+        height:40px;
+    }
+
+    .checkout-box{
+        padding:18px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<img src="images/two.jpeg"
+style="width:50px; border-radius:8px;">
+</a>
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#nav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="About.html">About</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Shop
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="shop3.html">deodorant/body spary/body mist</a></li>
+<li><a class="dropdown-item" href="shop2.html">diffusers</a></li>
+<li><a class="dropdown-item" href="shop.html">perfumes</a></li>
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Brands
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="Product2.html">LATTAFA</a></li>
+<li><a class="dropdown-item" href="product1.html">AFNAN</a></li>
+<li><a class="dropdown-item" href="product.html">ARMAF</a></li>
+</ul>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="Contact.html">Contact</a>
+</li>
+
+<li class="nav-item">
+
+<!-- <a class="nav-link position-relative"
+href="Cart.html">
+
+<i class="bi bi-cart fs-5"></i>
+
+<span class="cart-count-navbar position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+0
+</span>
+
+</a> -->
+
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- CART -->
+<div class="container cart-container">
+
+<h2 class="text-center fw-bold mb-4">
+Your Cart
+</h2>
+
+<!-- JS WILL LOAD ITEMS HERE -->
+<div id="cart-items"></div>
+
+<!-- GRAND TOTAL -->
+<div class="text-end mb-4">
+
+<!-- <h4 class="fw-bold" id="grand-total">
+Grand Total: ₦0
+</h4> -->
+
+</div>
+
+<!-- CHECKOUT -->
+<div class="checkout-box">
+
+<h4 class="text-center mb-4">
+Checkout Details
+</h4>
+
+<div class="mb-3">
+
+<input
+type="text"
+id="custName"
+class="form-control"
+placeholder="Enter your name">
+
+</div>
+
+<div class="mb-3">
+
+<textarea
+id="custAddress"
+class="form-control"
+rows="4"
+placeholder="Enter your address"></textarea>
+
+</div>
+
+<button
+class="btn btn-dark w-100 checkout-btn"
+onclick="checkoutWhatsApp()">
+
+<i class="fab fa-whatsapp me-2"></i>
+
+Checkout on WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer text-white">
+
+<div class="socials mb-3">
+
+<a href="https://www.facebook.com/immaculate b">
+<i class="bi bi-facebook"></i>
+</a>
+
+<a href="https://www.instagram.com/immaperfumes">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@immas.perfumes.and">
+<i class="fab fa-tiktok"></i>
+</a>
+
+</div>
+
+<p>
+© 2026 Imma's Perfumes
+</p>
+
+<p>
+Powered by Imma's Perfumes and More
+</p>
+
+<div class="whatsapp-box">
+
+Chat With Us
+
+<a href="https://wa.me/2347036392420">
+
+<i class="fab fa-whatsapp ms-2"></i>
+
+</a>
+
+</div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- YOUR JS -->
+<script src="js/cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfume Store</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- css links -->
+<link rel="stylesheet" href="css/home1.css">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- font icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+<div class="container">
+
+
+<a class="navbar-brand logo "  style="color: gold; font-size: 0px; " ><img src="images/two.jpeg" alt="" style="width: 50px; border-radius: 5px;  "></a>
+<!-- <a class="navbar-brand fw-bold pt-3 mx-3" href="#">IMMAS PERFUMES AND MORE</a> -->
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="About.html">About</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Shop
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="shop3.html">deodorant/body spary/body mist</a></li>
+<li><a class="dropdown-item" href="shop2.html">diffusers</a></li>
+<li><a class="dropdown-item" href="shop.html">perfumes</a></li>
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Brands
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="Product2.html">LATTAFA</a></li>
+<li><a class="dropdown-item" href="product1.html">AFNAN</a></li>
+<li><a class="dropdown-item" href="product.html">ARMAF</a></li>
+</ul>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="Contact.html">Contact</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link position-relative" href="Cart.html">
+  <i class="bi bi-cart fs-5"></i>
+
+  <span class="cart-count-navbar badge bg-danger">0</span>
+</a>
+</li>
+
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+
+<!-- car -->
+ <section class="hero">
+<div id="luxuryCarousel" class="carousel slide " data-bs-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#luxuryCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#luxuryCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#luxuryCarousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#luxuryCarousel" data-bs-slide-to="3"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active position-relative ">
+      <img src="images/HOP10.jpeg" class="d-block w-100">
+
+      <div class="position-absolute top-0 start-0 w-100 h-100 overlay"></div>
+
+      <div class="carousel-caption text-start mb-5">
+        <!-- <p class="bg-dark d-inline px-3 py-1 rounded-pill">Luxury Collection</p> -->
+        <!-- <h1 class="display-3">Let Your Scent Speak</h1> -->
+       <a href="images/shop.html"> <button class="btn btn-light rounded-pill px-4"> Shop now</button></a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item position-relative">
+      <img src="images/HOP7.jpg" class="d-block w-100">
+
+      <div class="position-absolute top-0 start-0 w-100 h-100 overlay"></div>
+
+      <div class="carousel-caption text-start mb-5">
+        <p class="bg-dark d-inline px-3 py-1 rounded-pill">New Arrival</p>
+        <h1 class="display-3"> Discover the world of ARMAF Perfumes </h1>
+       <a href="images/Product.html"> <button class="btn btn-light rounded-pill px-4"> Explore Products </button></a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item position-relative">
+      <img src="images/HOP5.jpg" class="d-block w-100">
+
+      <div class="position-absolute top-0 start-0 w-100 h-100 overlay"></div>
+
+      <div class="carousel-caption text-start mb-5">
+        <p class="bg-dark d-inline px-3 py-1 rounded-pill">  Signature Scent</p>
+        <h1 class="display-3">Unvaile your signature cent with AFNAN Perfumes</h1>
+        <a href="images/product1.html"><button class="btn btn-light rounded-pill px-4">Explore Products</button></a>
+      </div>
+    </div>
+
+     <!-- Slide 4 -->
+    <div class="carousel-item position-relative">
+      <img src="images/HOP11.jpg" class="d-block w-100">
+
+      <div class="position-absolute top-0 start-0 w-100 h-100 overlay"></div>
+
+      <div class="carousel-caption text-start mb-5">
+        <p class="bg-dark d-inline px-3 py-1 rounded-pill">  Crafted Sents</p>
+        <h1 class="display-3"> Crafted with pride and diginity we present LATTAFA PRIDE. </h1>
+       <a href="images/product2.html"><button class="btn btn-light rounded-pill px-4">Explore Products</button></a> 
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#luxuryCarousel" data-bs-slide="prev">
+    
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#luxuryCarousel" data-bs-slide="next">
+   
+  </button>
+
+</div>
+</section>
+
+
+<!-- 🔹 PRODUCT PREVIEW -->
+<!-- <section class="container my-5 text-center">
+  <div class="row g-4">
+    <h1 class="text-center"> </h1>
+
+    <div class="col-6 col-md-3">
+      <div class="bg-white p-3 rounded-4 shadow-sm">
+        <img src="HOP1.jpg" class="img-fluid">
+      </div>
+      <p class="mt-2">Club de nuit  iconic ₦120,000</p>
+        <button class="btn btn-gold me-2 bg-black text-white">Add to cart</button> 
+    </div>
+
+    <div class="col-6 col-md-3 ">
+      <div class="bg-white p-3 rounded-4 shadow-sm height-200">
+        <img src="" class="img-fluid" style="height: fit-content;">
+      </div>
+      <p class="mt-2">9pm ₦120,000</p>
+      <button class="btn btn-gold me-2 bg-black text-white">Add to cart</button> 
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="bg-white p-3 rounded-4 shadow-sm">
+        <img src= class="img-fluid">
+      </div>
+      <p class="mt-2">Club de nuite milestone ₦120,000</p>
+      <button class="btn btn-gold me-2 bg-black text-white">Add to cart</button> 
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="bg-white p-3 rounded-4 shadow-sm">
+        <img src=class="img-fluid">
+      </div>
+      <p class="mt-2">AL QIAM ₦120,000</p>
+      <button class="btn btn-gold me-2 bg-black text-white">Add to cart</button> 
+    </div>
+
+  </div>
+</section> -->
+
+<!-- PRODUCTS -->
+<section class="container py-5 mt-5">
+
+<h2 class="text-center mb-5">FEATURED PERFUMES</h2>
+
+<div class="row g-4">
+
+
+<!-- PRODUCT 1 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/HOP1.jpg">
+<div class="card-body text-center">
+<h6>club d nuite <br> iconic</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p1','Club De Nuit Iconic',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/HOP8.jpg">
+<div class="card-body text-center">
+<h6>Afnan <br>9pm</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p2','Afnan 9PM',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/HOP3.jpg">
+<div class="card-body text-center">
+<h6>club d nuite  <br> milestone</h6>
+<p>&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p3','Club De Nuit Milestone',60000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+
+<!-- PRODUCT 3 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/HOP13.jpg" >
+<div class="card-body text-center">
+<h6>Al Qiam <br> silver</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p4','Al Qiam Silver',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+
+</div>
+</section>
+<!-- our stories -->
+<div style="background: gray; text-align: center; padding-bottom: 3px;" >
+  <h1>OUR STORY </h1>
+</div>
+ <section class="story">
+  
+ <div class="card mb-3 mt-3" style="max-width: 540px; " >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="images/HOP12.jpeg" class="img-fluid rounded-start" alt="..." style="height:300px ;width: 550px;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">
+Immas Perfume is a growing fragrance brand dedicated to offering high-quality, long-lasting perfume oils that leave a lasting impression. Known for its rich, captivating scents, the brand focuses on helping individuals express confidence, style, and personality through fragrance. With a passion for luxury at an affordable price, Immas Perfume continues to serve customers who want to smell unique, bold, and unforgettable every day.
+</p>
+        <p class="card-text"><small class="text-body-secondary"></small></p>
+      </div>
+    </div>
+  </div>
+
+   
+
+</div>
+
+</section>
+<div style="background: gray; text-align: center; padding-bottom: 3px;" >
+  <h1>REVIEWS </h1>
+</div>
+
+
+<section class="story1">
+
+ <div class="card mb-3 mt-3" style="max-width: 540px; " >
+      <img src="images/review.jpeg" class="img-fluid rounded-start" alt="..." style="height:400px ;width: 550px;">
+    </div>
+    
+   
+
+</div>
+</div>
+</section>
+
+
+
+<!-- 🔹 CATEGORY SECTION -->
+<section class="container my-5">
+  <div class="row g-4">
+
+    <div class="col-md-6">
+      <div class="position-relative">
+        <img src="images/HOP5.jpg"
+             class="w-100 rounded-4"
+             style="height:300px; object-fit:cover;">
+
+        <div class="position-absolute bottom-0 text-white p-3  ">
+          <h5 style="color: black;">Gift For Him</h5>
+            <p style="color: black;">&#8358;60,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p10','GiftForHim',60000)">
+Add to Cart
+</button>
+        <a href="shop.html">  <button class="btn btn-light btn-sm rounded-pill">Shop </button></a>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="position-relative">
+        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539"
+             class="w-100 rounded-4"
+             style="height:300px; object-fit:cover;">
+
+        <div class="position-absolute bottom-0 text-white p-3">
+          <h5 style="color: rgb(22, 21, 21);">Gift For Her</h5>
+          <p style="color: black;">&#8358;45,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p9','GiftForHER',45000)">
+Add to Cart
+</button>
+        <a href="shop.html">  <button class="btn btn-light btn-sm rounded-pill">Shop </button></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 🔹 PRODUCT GRID -->
+<!-- <section class="container my-5 text-center">
+
+  <h4 class="mb-4"</h4>
+
+  <div class="row g-4">
+
+    <div class="col-6 col-md-3">
+      <div class="bg-white p-3 rounded-4 shadow-sm">
+        <img src= class="img-fluid">
+        <h6 class="mt-2">RAVE NOW</h6>
+        <p class="mt-2"> ₦120,000</p>
+      <button class="btn btn-gold me-2 bg-black text-white">Add to cart</button> 
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="bg-white p-3 rounded-4 shadow-sm">
+        <img src= class="img-fluid">
+        <h6 class="mt-2">RAMZ</h6>
+        <p class="mt-2"> ₦120,000</p>
+      <button class="btn btn-gold me-2 bg-black text-white">Add to cart</button> 
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="bg-white p-3 rounded-4 shadow-sm">
+        <img src="" class="img-fluid">
+        <h6 class="mt-2">KHAMRAH</h6>
+        <p class="mt-2"> ₦120,000</p>
+      <button class="btn btn-gold me-2 bg-black text-white">Add to cart</button> 
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="bg-white p-3 rounded-4 shadow-sm">
+        <img src="" class="img-fluid">
+        <h6 class="mt-2">ASAD</h6>
+        <p class="mt-2"> ₦120,000</p>
+      <button class="btn btn-gold me-2 bg-black text-white">Add to cart</button> 
+      </div>
+    </div>
+
+  </div>
+
+</section> -->
+
+<section class="container py-5 mt-5">
+
+<h2 class="text-center mb-5">FRAGRANCE TIPS & STORIES</h2>
+
+<div class="row g-4">
+
+
+<!-- PRODUCT 1 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/HOP14.jpg">
+<div class="card-body text-center">
+<h6>NOW RAVE</h6>
+<p>&#8358;20,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p5','NOWRAV',20000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/HOP15.jpg">
+<div class="card-body text-center">
+<h6>RAMZ</h6>
+<p>&#8358;20,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p6','RAMZ',20000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/HOP16.jpg">
+<div class="card-body text-center">
+<h6>KHARMARH</h6>
+<p>&#8358;50,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p7','KHARMRAH',50000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+
+<!-- PRODUCT 3 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/HOP17.jpg" >
+<div class="card-body text-center">
+<h6>ASAD</h6>
+<p>&#8358;25,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p8','ASAD',25000)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+
+</div>
+</section>
+
+<div class="floating-cart position-fixed bottom-0 end-0 m-3 bg-black text-white p-3 rounded-circle shadow">
+  <a href="Cart.html" class="text-white text-decoration-none">
+    <i class="bi bi-cart fs-4"></i>
+    <span id="cart-count" class="badge bg-danger">0</span>
+  </a>
+</div>
+
+
+
+  
+<!-- 🔹 FOOTER -->
+
+
+<footer class="footer text-white">
+
+<div class="socials mb-3">
+
+<a href="https://www.facebook.com/immaculate b">
+<i class="bi bi-facebook"></i>
+</a>
+
+<a href="https://www.instagram.com/immaperfumes">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@immas.perfumes.and">
+<i class="fab fa-tiktok"></i>
+</a>
+
+</div>
+
+<p>
+© 2026 Imma's Perfumes
+</p>
+
+<p>
+Powered by Imma's Perfumes and More
+</p>
+
+<div class="whatsapp-box">
+
+Chat With Us
+
+<a href="https://wa.me/2347036392420">
+
+<i class="fab fa-whatsapp ms-2"></i>
+
+</a>
+
+</div>
+
+</footer>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* FOOTER */
+.footer{
+    background:#111827;
+    padding:30px 20px;
+    text-align:center;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+}
+
+.socials i{
+    margin:0 10px;
+    font-size:24px;
+}
+
+.whatsapp-box{
+    background:white;
+    color:black;
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:12px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.whatsapp-box i{
+    color:green;
+    font-size:22px;
+}
+
+.info{
+ color: black;
+}

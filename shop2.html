@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Perfume Store</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="css/shop.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="bg-white text-black">
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+<div class="container">
+
+
+<a class="navbar-brand logo "  style="color: gold; font-size: 0px; " ><img src="images/two.jpeg" alt="" style="width: 70px; border-radius: 5px;  "></a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="About.html">About</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Shop
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="shop3.html">deodorant/body spary/body mist</a></li>
+<li><a class="dropdown-item" href="shop2.html">diffusers</a></li>
+<li><a class="dropdown-item" href="shop.html">perfumes</a></li>
+</ul>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+Brands
+</a>
+<ul class="dropdown-menu dropdown-menu-dark">
+<li><a class="dropdown-item" href="Product2.html">LATTAFA</a></li>
+<li><a class="dropdown-item" href="product1.html">AFNAN</a></li>
+<li><a class="dropdown-item" href="product.html">ARMAF</a></li>
+</ul>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="Contact.html">Contact</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link position-relative" href="Cart.html">
+  <i class="bi bi-cart fs-5"></i>
+
+  <span class="cart-count-navbar badge bg-danger">0</span>
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+</nav>
+
+
+<!-- HERO VIDEO -->
+<section class="hero d-flex align-items-center justify-content-center text-center">
+
+<video autoplay muted loop>
+<source src="videos/VID6.mp4" type="video/mp4">
+</video>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+<h1 class="display-3 fw-bold">LONG LASTING DIFFUSERS</h1>
+<p class="lead"><b>Choose the perfect scent for your home</b></p>
+<!-- <a href="#" class="btn btn-outline-light px-4">Shop Now</a> -->
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+<section class="container py-5 mt-5">
+
+<h2 class="text-center mb-5">Our Collection</h2>
+
+<div class="row g-4">
+
+<!-- PRODUCT 1 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 000001.jpg">
+<div class="card-body text-center">
+<h6>nedens</h6>
+<p>&#8358;6,500</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p169','nedens ',6500)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 000002.jpg">
+<div class="card-body text-center">
+<h6>veyes </h6>
+<p>&#8358;7,500</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p168','veyes ',7500)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 000003.jpg">
+<div class="card-body text-center">
+<h6>loris2  </h6>
+<p>&#8358;5,500</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p167','loris2  ',5500)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 000004.jpg">
+<div class="card-body text-center">
+<h6>loris  </h6>
+<p>&#8358;5,500</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p166','loris  ',5500)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 000006.jpg">
+<div class="card-body text-center">
+<h6>gulf orchid </h6>
+<p>&#8358;7,500</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p165','gulf orchid ',7500)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 000007.jpg">
+<div class="card-body text-center">
+<h6>capri</h6>
+<p>&#8358;6,500</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p164','capri ',6500)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 000008.jpg">
+<div class="card-body text-center">
+<h6>top breeze </h6>
+<p>&#8358;5,500</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p163','top breeze ',5500)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 000009.jpg">
+<div class="card-body text-center">
+<h6>via pinky</h6>
+<p>&#8358;7,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p162','via pinky ',7000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 0000010.jpg">
+<div class="card-body text-center">
+<h6>air magic</h6>
+<p>&#8358;7,500</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p161','air magic',7500)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 0000011.jpg">
+<div class="card-body text-center">
+<h6>ALYA</h6>
+<p>&#8358;5,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p160','ALYA',5000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 0000012.jpg">
+<div class="card-body text-center">
+<h6>HFD</h6>
+<p>&#8358;6,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p159','HFD',6000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 0000013.jpg">
+<div class="card-body text-center">
+<h6>garden</h6>
+<p>&#8358;5,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p158','garden',5000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 0000014.jpg">
+<div class="card-body text-center">
+<h6>crown breeze</h6>
+<p>&#8358;6,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p157','crown breeze',6000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 0000015.jpg">
+<div class="card-body text-center">
+<h6>ikeda</h6>
+<p>&#8358;5,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p156','ikeda',5000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 0000016.jpg">
+<div class="card-body text-center">
+<h6>grace</h6>
+<p>&#8358;5,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p155','grace',5000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 0000017.jpg">
+<div class="card-body text-center">
+<h6>sent of venus</h6>
+<p>&#8358;5,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p154','sent of venus',5000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 0000018.jpg">
+<div class="card-body text-center">
+<h6>bambuko</h6>
+<p>&#8358;6,500</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p153','bambuko',6500)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 0000019.jpg">
+<div class="card-body text-center">
+<h6>memwa</h6>
+<p>&#8358;6,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p152','memwa',6000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/SHO 0000020.jpg">
+<div class="card-body text-center">
+<h6>loris</h6>
+<p>&#8358;5,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p151','loris',5000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="images/PRO 02.jpg">
+<div class="card-body text-center">
+<h6>rexona</h6>
+<p>&#8358;5,000</p>
+<button class="btn btn-outline-danger btn-sm"
+onclick="addToCart('p150','rexona',5000)">
+Add to Cart
+</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="PRO 02.jpg">
+<div class="card-body text-center">
+<h6>Perfume Two</h6>
+<p>$60</p>
+<button class="btn btn-outline-danger btn-sm text-red">Add to Cart</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="PRO 02.jpg">
+<div class="card-body text-center">
+<h6>Perfume Two</h6>
+<p>$60</p>
+<button class="btn btn-outline-danger btn-sm text-red">Add to Cart</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="PRO 02.jpg">
+<div class="card-body text-center">
+<h6>Perfume Two</h6>
+<p>$60</p>
+<button class="btn btn-outline-danger btn-sm text-red">Add to Cart</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-6">
+<div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
+<img src="PRO 02.jpg">
+<div class="card-body text-center">
+<h6>Perfume Two</h6>
+<p>$60</p>
+<button class="btn btn-outline-danger btn-sm text-red">Add to Cart</button>
+</div>
+</div>
+</div>
+
+ -->
+
+
+
+
+</div>
+</section>
+
+
+
+</section>
+<div class="floating-cart position-fixed bottom-0 end-0 m-3 bg-black text-white p-3 rounded-circle shadow">
+  <a href="Cart.html" class="text-white text-decoration-none">
+    <i class="bi bi-cart fs-4"></i>
+    <span id="cart-count" class="badge bg-danger">0</span>
+  </a>
+</div>
+<!-- FOOTER -->
+ <footer class="footer text-white">
+
+<div class="socials mb-3">
+
+<a href="https://www.facebook.com/immaculate b">
+<i class="bi bi-facebook"></i>
+</a>
+
+<a href="https://www.instagram.com/immaperfumes">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@immas.perfumes.and">
+<i class="fab fa-tiktok"></i>
+</a>
+
+</div>
+
+<p>
+© 2026 Imma's Perfumes
+</p>
+
+<p>
+Powered by Imma's Perfumes and More
+</p>
+
+<div class="whatsapp-box">
+
+Chat With Us
+
+<a href="https://wa.me/2347036392420">
+
+<i class="fab fa-whatsapp ms-2"></i>
+
+</a>
+
+</div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+ .icon-box {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .icon-box i {
+      font-size: 30px;
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      background: black;
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+     .footer {
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+      margin-left: px;
+      text-decoration: none;
+       color:#aaaaaa;
+      background:#212529;
+}
+
+.my-icon{
+  font-size: 30px;
+  /* text-align: center; */
+  /* margin-left:50px ; */
+  background: green;
+  padding: 12px;
+  border-radius: 50%;
+  margin: auto;
+  color: wheat;
+}
+
+.custom-input{
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 10px 15px;
+  outline: none;
+  margin-right: 20px;
+  background: white;
+  color: black;
+  font-weight: 700;
+   opacity: 1; 
+  font-style: italic;
+  margin-left: 80px; 
+  
+
+}
+     .footer a{
+    color:white;
+    text-decoration:none;
+}
+
+.socials i{
+    margin:0 10px;
+    font-size:24px;
+}
+
+.whatsapp-box{
+    background:white;
+    color:black;
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:12px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.whatsapp-box i{
+    color:green;
+    font-size:22px;
+}
+
+.hero{
+  background-size: cover;
+  height: 70vh;
+}
+   .hero {
+    position: relative;
+    height : 100vh;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* PRODUCT CARD */
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+} 
+.body{
+  background: black;
+}
+    

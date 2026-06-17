@@ -1,0 +1,169 @@
+ body {
+      background: #f5f5f5;
+    }
+.carousel-item img{
+  height: 100vh;
+  object-fit: cover;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.5);
+}
+.story{
+  display: flex;
+  justify-content: center;
+  background: gray;
+}
+
+.story1{
+  display: flex;
+  justify-content: center;
+  background: gray;
+}
+
+
+
+    .icon-box {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .icon-box i {
+      font-size: 30px;
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      background: black;
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+     /* .footer {
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+      margin-left: px;
+      text-decoration: none;
+       color:#aaaaaa;
+      background:#212529;
+} */
+
+.my-icon{
+  font-size: 30px;
+  /* text-align: center; */
+  /* margin-left:50px ; */
+  background: green;
+  padding: 12px;
+  border-radius: 50%;
+  margin: auto;
+  color: wheat;
+}
+
+/* .custom-input{
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 10px 15px;
+  outline: none;
+  margin-right: 20px;
+  background: white;
+  color: black;
+  font-weight: 700;
+   opacity: 1; 
+  font-style: italic;
+  margin-left: 80px; 
+  
+
+} */
+.hero{
+  top: 50%;
+}
+
+
+/* PRODUCT CARD */
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+} 
+
+   .floating-cart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 9999;
+}
+
+.floating-cart a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.floating-cart #cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+} 
+html{
+scroll-behavior: smooth;
+}
+#cart-section{
+  scroll-margin-top: 80px;
+}
+/* FOOTER */
+.footer{
+    background:#111827;
+    padding:30px 20px;
+    text-align:center;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+}
+
+.socials i{
+    margin:0 10px;
+    font-size:24px;
+}
+
+.whatsapp-box{
+    background:white;
+    color:black;
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:12px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.whatsapp-box i{
+    color:green;
+    font-size:22px;
+}
+
